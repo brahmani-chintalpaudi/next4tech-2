@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Home Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#lights">Lights</a></li>
+            <li><a href="#thermostat">Thermostat</a></li>
+            <li><a href="#cameras">Cameras</a></li>
+            <li><a href="#locks">Locks</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="lights">
+            <h2>Lights</h2>
+            <div class="device">
+                <h3>Living Room Light</h3>
+                <button class="toggle-button">Toggle</button>
+                <input type="range" min="0" max="100" value="50">
+            </div>
+            <div class="device">
+                <h3>Bedroom Light</h3>
+                <button class="toggle-button">Toggle</button>
+                <input type="range" min="0" max="100" value="75">
+            </div>
+        </section>
+        <section id="thermostat">
+            <h2>Thermostat</h2>
+            <div class="device">
+                <h3>Current Temperature: <span>72°F</span></h3>
+                <input type="range" min="60" max="80" value="72">
+            </div>
+        </section>
+        <section id="cameras">
+            <h2>Cameras</h2>
+            <div class="device">
+                <h3>Front Door Camera</h3>
+                <button class="view-button">View</button>
+            </div>
+            <div class="device">
+                <h3>Backyard Camera</h3>
+                <button class="view-button">View</button>
+            </div>
+        </section>
+        <section id="locks">
+            <h2>Locks</h2>
+            <div class="device">
+                <h3>Front Door Lock</h3>
+                <button class="lock-button">Lock/Unlock</button>
+            </div>
+            <div class="device">
+                <h3>Garage Door</h3>
+                <button class="lock-button">Open/Close</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Smart Home Inc.</p>
+    </footer>
+</body>
+</html>
